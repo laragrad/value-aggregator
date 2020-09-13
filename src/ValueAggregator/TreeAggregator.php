@@ -59,31 +59,6 @@ class TreeAggregator
     }
 
     /**
-     * Clear aggregation rules collection
-     *
-     * @return \Laragrad\ValueAggregator\Aggregator
-     */
-    public function resetGroupingRules()
-    {
-        $this->groupingRules = collect();
-
-        return $this;
-    }
-
-    /**
-     * Adds one grouping rule
-     *
-     * @param array $groupingRule
-     * @return \Laragrad\ValueAggregator\Aggregator
-     */
-    public function groupBy($groupingRule)
-    {
-        $this->groupingRules->add($groupingRule);
-
-        return $this;
-    }
-
-    /**
      * Returns count of grouping levels
      *
      * @return integer
