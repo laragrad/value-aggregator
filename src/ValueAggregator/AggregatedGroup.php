@@ -2,12 +2,14 @@
 
 namespace Laragrad\ValueAggregator;
 
+use Laragrad\ValueAggregator\TreeAggregator;
+
 class AggregatedGroup
 {
     /**
      * Aggregator
      *
-     * @var \Laragrad\ValueAggregator\Aggregator
+     * @var \Laragrad\ValueAggregator\TreeAggregator
      */
     protected $aggregator;
 
@@ -56,11 +58,11 @@ class AggregatedGroup
     /**
      * Constructor
      *
-     * @param Aggregator $aggregator
+     * @param TreeAggregator $aggregator
      * @param string|null $key
      * @param int|null $level
      */
-    public function __construct(Aggregator $aggregator, string $key = null, int $level = null) {
+    public function __construct(TreeAggregator $aggregator, string $key = null, int $level = null) {
         $this->aggregator = $aggregator;
         $this->key = $key ?? null;
         $this->level = $level ?? 0;

@@ -1,7 +1,7 @@
 <?php
 namespace Laragrad\ValueAggregator\Examples;
 
-use Laragrad\ValueAggregator\Examples;
+use Laragrad\ValueAggregator\TreeAggregator;
 
 class TreeAggregatorExample
 {
