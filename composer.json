@@ -1,0 +1,23 @@
+{
+	"name" : "laragrad/value-aggregator",
+	"keywords" : [
+		"laravel",
+		"codifier"
+	],
+	"type" : "package",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Ilya Khondozhko",
+			"email" : "dev@laragrad.com"
+		}
+	],
+	"require" : {
+		"php" : "^7.2.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Laragrad\\ValueAggregator\\" : "src"
+		}
+	},
+	"minimum-stability" : "dev"
+}
